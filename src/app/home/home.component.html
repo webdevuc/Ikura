@@ -1,226 +1,191 @@
-<div class="header">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12">
-				<nav class="navbar">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#">
-							<img src="../../assets/images/Group236.png">
-						</a>
-					</div>
-					<div class="collapse navbar-collapse" id="myNavbar">
-						<ul class="nav navbar-nav">
-							<!--  <li class="active"><a href="#">Home</a></li> -->
-							<li class="dropdown">
-								<!--  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a> -->
-								<ul class="dropdown-menu">
-									<!-- <li><a href="#">Page 1-1</a></li>
-					            <li><a href="#">Page 1-2</a></li>
-					            <li><a href="#">Page 1-3</a></li> -->
-								</ul>
-							</li>
-							<!--  <li><a href="#">Page 2</a></li>
-					        <li><a href="#">Page 3</a></li> -->
-						</ul>
-						<ul class="nav navbar-nav navbar-right" id="social-icon-images">
-							<li><a href="#"><button type="button" class="btn btn-outline text-uppercase red-btn">buy
-										ikura</button></a></li>
-							<li><a href="#"><button type="button" class="btn btn-outline text-uppercase blue-btn">launch
-										app</button></a></li>
-							<li><a href="#"><img src="../../assets/images/Icon-awesome-github-alt.png"></a></li>
-							<li><a href="#"><img src="../../assets/images/Icon-awesome-twitter.png"></a></li>
-							<li><a href="#"><img src="../../assets/images/Icon-awesome-telegram-plane.png"></a></li>
-							<li><a href="#"><img src="../../assets/images/Icon-awesome-discord.png"></a></li>
-							<li><a href="#"><img src="../../assets/images/Icon-awesome-medium-m.png"></a></li>
-							<li><a href="#"><img src="../../assets/images/Icon-awesome-reddit-alien.png"></a></li>
-							<li><a href="#"><img src="../../assets/images/Icon-awesome-github-alt.png"></a></li>
-							<li><a href="#"><img src="../../assets/images/NomicsLogo.png"></a></li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="banner-area">
-	<div class="container-fluid">
-		<div class="row">
+<div class="banner">
+  <div class="container-fluid h-100">
+    <app-header></app-header>
+    <div class="banner-area text-white h-100">
 
-			<div class="contenedor">
-				<form>
-					<input type="radio" id="Slide1" name="slider" autofocus="autofocus" titulo="Home"
-						checked="checked" />
-					<input type="radio" id="Slide2" name="slider" titulo="Why Ikura" />
-					<input type="radio" id="Slide3" name="slider" titulo="Roadmap" />
-					<input type="radio" id="Slide4" name="slider" titulo="Our Team" />
-					<input type="radio" id="Slide5" name="slider" titulo="Contact Us" />
-					<div class="labels">
-						<label class="Slide" for="Slide1" id="Slide1">
-							<div class="content">
-								<div class="home-img">
-									<img src="../../assets/images/Group-289.png">
-								</div>
-								<div class="home-content">
-									<h1>EMPOWERING THE HARMONY ECOSYSYEM</h1>
-									<h3>We are excited to announce the release of our beta v2 and invite the IKURA
-										community to trial it below.</h3>
-									<ul class="list-inline btn-section">
-										<li><a href="#"><button type="button"
-													class="btn btn-outline text-uppercase whitepaper-btn">whitepaper</button></a>
-										</li>
-										<li><a href="#"><button type="button"
-													class="btn btn-outline text-uppercase launch-btn">launch
-													app</button></a></li>
-									</ul>
-								</div>
-							</div>
-							<div class=" icon copy-icon"><span>&copy;Ikura Token</span></div>
-						</label>
-						<label class="Slide" for="Slide2" id="Slide2">
-							<div class="content why-ikura-area">
-								<div class="row">
-									<div class="col-md-7">
-										<h1>Why Ikura?</h1>
-										<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-											eirmod tempor
-											invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-											vero eos et accusam
-											et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-											takimata sanctus est
-											Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-											sadipscing elitr, sed diam nonumy
-											eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-											voluptua. At vero eos et accusam et
-											justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-											takimata sanctus est Lorem ipsum dolor sit amet.
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-											eirmod tempor invidunt ut labore et dolore
-											magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-											duo dolores</p>
-									</div>
+      <div class="bs-stepper vertical" id="stepper1">
+        <div class="stepper-header-container">
+          <div class="bs-stepper-header" role="tablist">
+            <div class="step" data-target="#logins-part">
+              <button type="button" class="step-trigger" >
+                <span class="bs-stepper-label">Home</span>
+                <span class="bs-stepper-circle"></span>
+              </button>
+            </div>
+            <div class="line"></div>
+            <div class="step" data-target="#information-part">
+              <button type="button" class="step-trigger" >
+                <span class="bs-stepper-label">Why Ikura</span>
+                <span class="bs-stepper-circle"></span>
+              </button>
+            </div>
+            <div class="line"></div>
+            <div class="step" data-target="#roadmap-part">
+              <button type="button" class="step-trigger" >
+                <span class="bs-stepper-label">Roadmap</span>
+                <span class="bs-stepper-circle"></span>
+              </button>
+            </div>
+            <div class="line"></div>
+            <div class="step" data-target="#team-part">
+              <button type="button" class="step-trigger" >
+                <span class="bs-stepper-label">Our Team</span>
+                <span class="bs-stepper-circle"></span>
+              </button>
+            </div>
+            <div class="line"></div>
+            <div class="step" data-target="#contact-part">
+              <button type="button" class="step-trigger" >
+                <span class="bs-stepper-label">Contact Us</span>
+                <span class="bs-stepper-circle"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="bs-stepper-content">
+          <div id="logins-part" class="content" role="tabpanel" >
+            <div class="home-content text-center" *ngIf="currentStep === 0">
+             <div class="img-container">
+              <img class="img-fluid" src="assets/images/Group-289.png">
+             </div>
+             <h1>EMPOWERING THE HARMONY ECOSYSYEM</h1>
+             <h3>We are excited to announce the release of our beta v2 and invite the IKURA
+              community to trial it below.</h3>
 
-									<div class="col-md-5">
-										<div class="embed-responsive embed-responsive-16by9">
-											<iframe class="embed-responsive-item"
-												src="https://www.youtube.com/embed/v64KOxKVLVg"
-												allowfullscreen></iframe>
-										</div>
-									</div>
-								</div>
-							</div>
-						</label>
-						<label class="Slide" for="Slide3" id="Slide3">
-							<div class="content">
-								<div class="row">
-									<div class="col-md-4">
-										<span class="active active-head"><a href="#">Q4 2021</a></span>
-										<ul class="list-unstyled milestone-list">
-											<li><a href="#">Milestone 1</a></li>
-											<li><a href="#">Milestone 2</a></li>
-											<li><a href="#">Milestone 3</a></li>
-											<li><a href="#">Milestone 4</a></li>
-											<li><a href="#">Milestone 5</a></li>
-										</ul>
-									</div>
-									<div class="col-md-4">
-										<span class="active"><a href="#">Q4 2022</a></span>
-										<ul class="list-unstyled milestone-list">
-											<li><a href="#">Milestone 1</a></li>
-											<li><a href="#">Milestone 2</a></li>
-											<li><a href="#">Milestone 3</a></li>
-											<li><a href="#">Milestone 4</a></li>
-											<li><a href="#">Milestone 5</a></li>
-										</ul>
-									</div>
-									<div class="col-md-4">
-										<span class="active"><a href="#">Q4 2023</a></span>
-										<ul class="list-unstyled milestone-list">
-											<li><a href="#">Milestone 1</a></li>
-											<li><a href="#">Milestone 2</a></li>
-											<li><a href="#">Milestone 3</a></li>
-											<li><a href="#">Milestone 4</a></li>
-											<li><a href="#">Milestone 5</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</label>
-						<label class="Slide" for="Slide4" id="Slide4">
-							<div class="content">
-								<!-- slider -->
-								<div class="container-fluid">
-									<div class="row" id="mobile-step">
-										<div class="col-10 mx-auto">
-											<div class="testimonial-area">
-												<div class="testimonial-image-slider slider-nav text-center">
-													<div class="mcontent">
-														<p>Step 1</p>
-														<em>Complete the essay questions</em>
-													</div>
-													<div class="mcontent">
-														<p>Step 2</p>
-														<em>Complete the registration form as below</em>
+              <div class="button-container">
+                <button type="button" class="btn btn-lg btn-whitepaper mr-4">whitepaper</button>
+                <button type="button" class="btn btn-lg btn-launch-app">launch app</button>
+              </div>
 
-													</div>
-													<div class="mcontent">
-														<p>Step 3</p>
-														<em>We will review your answers to the essay questions.
-														</em>
+              <div class=" icon copy-icon"><h3>&copy;Ikura Token</h3></div>
+            </div>
+          </div>
+          <div id="information-part" class="content" role="tabpanel" >
+            <app-ikura-info *ngIf="currentStep === 1"></app-ikura-info>
+          </div>
+          <div id="roadmap-part" class="content" role="tabpanel">
+            <app-road-map *ngIf="currentStep === 2"></app-road-map>
+          </div>
+          <div id="team-part" class="content" role="tabpanel">
+            <app-our-team *ngIf="currentStep === 3"></app-our-team>
+          </div>
+          <div id="contact-part" class="content" role="tabpanel">
+            <app-contact-us *ngIf="currentStep === 4"></app-contact-us>
+          </div>
+        </div>
+      </div>
 
-													</div>
-													<div class="mcontent">
-														<p>Step 4</p>
-														<em>If you are qualified, we will send you a confirmation
-															letter within 1 week.</em>
+        <!-- <div class="row">
+  
 
-													</div>
-													<div class="mcontent">
-														<p>Step 5</p>
-														<em>Registration completed</em>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- partial -->
+            
+                <label class="Slide" for="Slide3" id="Slide3">
+                  <div class="content">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <span class="active active-head"><a href="#">Q4 2021</a></span>
+                        <ul class="list-unstyled milestone-list">
+                          <li><a href="#">Milestone 1</a></li>
+                          <li><a href="#">Milestone 2</a></li>
+                          <li><a href="#">Milestone 3</a></li>
+                          <li><a href="#">Milestone 4</a></li>
+                          <li><a href="#">Milestone 5</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4">
+                        <span class="active"><a href="#">Q4 2022</a></span>
+                        <ul class="list-unstyled milestone-list">
+                          <li><a href="#">Milestone 1</a></li>
+                          <li><a href="#">Milestone 2</a></li>
+                          <li><a href="#">Milestone 3</a></li>
+                          <li><a href="#">Milestone 4</a></li>
+                          <li><a href="#">Milestone 5</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4">
+                        <span class="active"><a href="#">Q4 2023</a></span>
+                        <ul class="list-unstyled milestone-list">
+                          <li><a href="#">Milestone 1</a></li>
+                          <li><a href="#">Milestone 2</a></li>
+                          <li><a href="#">Milestone 3</a></li>
+                          <li><a href="#">Milestone 4</a></li>
+                          <li><a href="#">Milestone 5</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </label>
+                <label class="Slide" for="Slide4" id="Slide4">
+                  <div class="content">
+                    <div class="container-fluid">
+                      <div class="row" id="mobile-step">
+                        <div class="col-10 mx-auto">
+                          <div class="testimonial-area">
+                            <div class="testimonial-image-slider slider-nav text-center">
+                              <div class="mcontent">
+                                <p>Step 1</p>
+                                <em>Complete the essay questions</em>
+                              </div>
+                              <div class="mcontent">
+                                <p>Step 2</p>
+                                <em>Complete the registration form as below</em>
+  
+                              </div>
+                              <div class="mcontent">
+                                <p>Step 3</p>
+                                <em>We will review your answers to the essay questions.
+                                </em>
+  
+                              </div>
+                              <div class="mcontent">
+                                <p>Step 4</p>
+                                <em>If you are qualified, we will send you a confirmation
+                                  letter within 1 week.</em>
+  
+                              </div>
+                              <div class="mcontent">
+                                <p>Step 5</p>
+                                <em>Registration completed</em>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+  
+                  </div>
+                </label>
+                <label class="Slide" for="Slide5" id="Slide5">
+                  <div class="content">
+                    <h1>About</h1>
+                    <div class="block"><span><a href="https://dribbble.com/hrtzt" target="_blank"><i
+                            class="fa fa-dribbble"> </i>Dribbble me</a></span><span><a
+                          href="https://twitter.com/hrtzt" target="_blank"><i
+                            class="fa fa-twitter"></i>Tweet me</a></span></div>
+                  </div>
+                </label>
+                <label for="Slide6" id="Slide6">
+                  <div class="content">
+                    <h1>Dummy page</h1>
+                    <div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Architecto numquam, totam iusto officia earum perferendis</div>
+                  </div>
+                </label>
+                <label for="Slide7" id="Slide7">
+                  <div class="content">
+                    <h1>Dummy page</h1>
+                    <div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Architecto numquam, totam iusto officia earum perferendis</div>
+                  </div>
+                </label>
+              </div>
+            </form>
+          </div>
+  
+  
+        </div> -->
+    </div>
+  </div>
 
-
-							</div>
-						</label>
-						<label class="Slide" for="Slide5" id="Slide5">
-							<div class="content">
-								<h1>About</h1>
-								<div class="block"><span><a href="https://dribbble.com/hrtzt" target="_blank"><i
-												class="fa fa-dribbble"> </i>Dribbble me</a></span><span><a
-											href="https://twitter.com/hrtzt" target="_blank"><i
-												class="fa fa-twitter"></i>Tweet me</a></span></div>
-							</div>
-						</label>
-						<label for="Slide6" id="Slide6">
-							<div class="content">
-								<h1>Dummy page</h1>
-								<div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Architecto numquam, totam iusto officia earum perferendis</div>
-							</div>
-						</label>
-						<label for="Slide7" id="Slide7">
-							<div class="content">
-								<h1>Dummy page</h1>
-								<div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Architecto numquam, totam iusto officia earum perferendis</div>
-							</div>
-						</label>
-					</div>
-				</form>
-			</div>
-
-
-		</div>
-	</div>
 </div>
