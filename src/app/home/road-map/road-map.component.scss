@@ -2,16 +2,33 @@
 
 .road-map-content{
   background: transparent;
-}.heading{
-  font-size: 50px;
-  &.active {
-    color: $blue;
+  .heading{
+    font-size: 50px;
+    position: relative;
+    &.active {
+      color: $blue;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 20%;
+        height: 1px;
+        bottom: 0;
+        left: 2%;
+        border-bottom: 3px solid $blue;
+      }
+    }
   }
-}
-.milestone-list{
-  li {
-    background: transparent;
-    border: none;
-    font-size: 30px;
+  .milestone-list{
+    li {
+      background: transparent;
+      border: none;
+      font-size: 30px;
+      &.active-list {
+        &::before {
+          content:"\2713";
+        }
+      }
+      
+    }
   }
 }
