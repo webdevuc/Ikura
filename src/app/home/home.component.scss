@@ -9,13 +9,13 @@
 }
 .bs-stepper {
   flex-direction: row-reverse;
-  flex: 0 0 20%;
   height: 100%;
   .stepper-header-container{
     height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 0 0 10%;
   }
   .bs-stepper-header {
     align-items: end;
@@ -45,7 +45,7 @@
     }
   }
   .bs-stepper-content {
-    flex: 0 0 80%;
+    flex: 0 0 85%;
     padding-top: 40px;
   }
 }
