@@ -1,7 +1,8 @@
 <div class="banner">
-  <div class="container-fluid h-100">
-    <app-header></app-header>
-    <div class="banner-area text-white h-100">
+  <!-- <div class="h-100"> -->
+    <!-- <app-header ></app-header> -->
+
+    <div class="banner-area text-white container-fluid  h-100">
 
       <div class="bs-stepper vertical" id="stepper1">
         <div class="stepper-header-container">
@@ -53,14 +54,18 @@
               community to trial it below.</h3>
 
               <div class="button-container">
-                <button type="button" class="btn btn-lg btn-whitepaper mr-4">whitepaper</button>
-                <button type="button" class="btn btn-lg btn-launch-app">launch app</button>
+                <button type="button" class="btn btn-lg btn-whitepaper mr-md-4 mt-4"
+                  data-toggle="tooltip" data-placement="bottom" title="WhitePapare"> whitepaper
+                </button>
+                <button type="button" class="btn btn-lg btn-launch-app mt-4"
+                  data-toggle="tooltip" data-placement="bottom" title="Launch App"  onclick="window.location.href='https://app.ikura.one'">launch app
+                </button>
               </div>
 
               <div class=" icon copy-icon"><h3>&copy;Ikura Token</h3></div>
             </div>
           </div>
-          <div id="information-part" class="content" role="tabpanel" >
+          <div id="information-part" class="content" role="tabpanel">
             <app-ikura-info *ngIf="currentStep === 1"></app-ikura-info>
           </div>
           <div id="roadmap-part" class="content" role="tabpanel">
@@ -75,5 +80,5 @@
         </div>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 </div>

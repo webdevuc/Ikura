@@ -2,13 +2,31 @@
 @import '~bs-stepper/dist/css/bs-stepper.min.css';
 @import "assets/styles/variable";
 
+@font-face {
+  font-family: aAutobusOmnibus;
+  src: url('/src/assets/font/aAutobusOmnibus.otf');
+}
+* {
+  font-family: 'aAutobusOmnibus';
+}
 html, body {
   height: 100%;
   margin: 0;
   overflow: hidden;
+  background-image: url('../src/assets/images/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (min-width: 320px) and (max-width: 480px){
+    overflow-y: scroll;
+    height: auto;
+  }
 }
 .title {
   font-size: 60px;
   text-transform: uppercase;
   font-weight: 700;
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 36px !important;
+  }
 }

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  navbarSupportedContent: boolean = false;
   constructor() { }
 
   ngOnInit(): void {

@@ -3,6 +3,9 @@
   .info-text{
     font-size: 22px;
     margin: 22px 0;
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 18px !important;
+    }
   }
   .embed-responsive{
     height: 100%;

@@ -28,4 +28,9 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  // scrollToElement($element: any): void {
+  //   console.log($element);
+  //   $element.scrollIntoView({behavior: "smooth", block: "start"});
+  // }
+
 }
